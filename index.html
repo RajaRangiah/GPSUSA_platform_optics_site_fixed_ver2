@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GPSUSA.ai — Governed GPU Capital</title>
+  <meta name="description" content="GPSUSA.ai treats GPUs as governed capital — priced, allocated, and enforced by policy." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html" aria-label="GPSUSA home"><img src="assets/client_logo.svg" alt="GPSUSA.ai" style="width:28px;height:28px" /><span>GPSUSA.ai</span></a>
+        
+        <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="platform.html">Platform</a>
+          <a href="technology.html">Technology</a>
+          <a href="control-plane.html">Economic Control Plane</a>
+          <a href="customers.html">Customers</a>
+          <a href="resources.html">Resources</a>
+          <a href="company.html">Company</a>
+          <a href="contact.html">Contact</a>
+          <a class="btn btn-primary mobile-cta" href="activation.html">Access Platform</a>
+        </nav>
+        
+        <a class="btn btn-primary" href="activation.html">Access Platform</a>
+      </div>
+    </header>
+    
+
+<section class="hero">
+  <div class="container">
+    <div class="kicker">Economic control planes • Runtime enforcement • Unit economics</div>
+    <h1 class="h1">Our platform reduces GPU spend by ~40%.</h1>
+    <p class="sub">
+      <strong>GPSUSA sits at the intersection of Systems Engineering and Financial Quant Theory</strong>, treating GPUs as governed capital — priced, allocated, and enforced by policy.<br/>
+      We build economic control planes that convert GPU behavior and AI workloads into programmable business constraints.<br/>
+      We replace utilization vanity metrics with real unit economics — enforcing cost, fairness, and performance at runtime.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="activation.html">Activate Fleet Economic Baseline</a>
+      <a class="btn" href="control-plane.html">View Control Plane Architecture</a>
+    </div>
+
+    <div class="mode-bar" aria-label="Mode toggle">
+      <div class="mode-title">
+        <span class="badge">CFO Mode</span>
+        <span class="pill">Unit economics, predictability, governance</span>
+      </div>
+
+      <div class="toggle">
+        <span class="pill"><strong>CFO</strong></span>
+        <div class="switch" id="modeSwitch" data-mode="cfo" role="switch" aria-checked="false" tabindex="0">
+          <div class="knob"></div>
+        </div>
+        <span class="pill"><strong>CTO</strong></span>
+      </div>
+
+      <div class="mode-tag">
+        <span class="badge" id="modeBadge">CFO Mode</span>
+      </div>
+    </div>
+    <div class="hr"></div>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Unit Economics (Not Vanity)</h3>
+        <p>tokens/sec/$ by model, tenant, and workload class — tied to cost attribution you can defend.</p>
+      </div>
+      <div class="card">
+        <h3>Policy Enforcement at Runtime</h3>
+        <p>Fairness, routing, isolation, and cost envelopes enforced by a control plane — not tribal process.</p>
+      </div>
+      <div class="card">
+        <h3>Predictable Fleet Outcomes</h3>
+        <p>Reduce drift and regressions through measurable guardrails and continuous economic optimization.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="dashboard">
+  <div class="container">
+    <h2 id="dashTitle">CFO dashboard (live mock telemetry)</h2>
+    <p class="sub" style="font-size:16px;max-width:900px" id="dashSub">
+      Unit economics, fairness, leakage, and p99 stability — shown as CFO-defensible metrics (mock telemetry).
+    </p>
+    <div class="hr"></div>
+
+    <div class="kpi-grid">
+      <div class="card">
+        <div class="stat">
+          <div>
+            <h3 style="margin:0 0 6px">tokens/sec/$</h3>
+            <div class="small">Fleet efficiency KPI</div>
+          </div>
+          <div style="text-align:right">
+            <div class="value" id="kpi_tpsd">—</div>
+            <div class="delta" id="kpi_tpsd_delta">—</div>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <div class="chart"><svg id="chart_tpsd" viewBox="0 0 600 180" preserveAspectRatio="none"></svg></div>
+      </div>
+
+      <div class="card">
+        <div class="stat">
+          <div>
+            <h3 style="margin:0 0 6px">Cost / 1M tokens</h3>
+            <div class="small">Budgetable cost attribution</div>
+          </div>
+          <div style="text-align:right">
+            <div class="value" id="kpi_cpm">—</div>
+            <div class="delta" id="kpi_cpm_delta">—</div>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <div class="chart"><svg id="chart_cpm" viewBox="0 0 600 180" preserveAspectRatio="none"></svg></div>
+      </div>
+
+      <div class="card">
+        <div class="stat">
+          <div>
+            <h3 style="margin:0 0 6px">Fairness index</h3>
+            <div class="small">Multi-tenant yield stability</div>
+          </div>
+          <div style="text-align:right">
+            <div class="value" id="kpi_fair">—</div>
+            <div class="delta" id="kpi_fair_delta">—</div>
+          </div>
+        </div>
+        <div class="hr"></div>
+        <div class="chart"><svg id="chart_fair" viewBox="0 0 600 180" preserveAspectRatio="none"></svg></div>
+      </div>
+    </div>
+
+    <div class="hr"></div>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <h3 style="margin-top:0">Leakage (lower is better)</h3>
+        <p class="small">Structural waste signal over time (mock).</p>
+        <div class="chart"><svg id="chart_leak" viewBox="0 0 600 180" preserveAspectRatio="none"></svg></div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">p99 latency stability</h3>
+        <p class="small">Tail latency tightening under policy (mock).</p>
+        <div class="chart"><svg id="chart_p99" viewBox="0 0 600 180" preserveAspectRatio="none"></svg></div>
+      </div>
+    </div>
+
+    <div class="hr"></div>
+
+    <div class="callout" id="modeCallout">
+      <strong>Why this matters:</strong> CFO Mode focuses on predictable spend and defendable unit economics.
+      Toggle to CTO Mode to see the technical control surfaces that make these metrics real.
+    </div>
+  </div>
+</section>
+
+<section class="section hidden" id="ctoPanel">
+  <div class="container">
+    <h2>CTO view (control surfaces)</h2>
+    <p class="sub" style="font-size:16px;max-width:900px">
+      The same outcomes — expressed as enforceable engineering surfaces: routing policy, fairness, isolation, and SLO guardrails.
+    </p>
+    <div class="hr"></div>
+    <div class="grid grid-3">
+      <div class="card"><h3>Workload routing</h3><p>Route by complexity, cost envelope, and p99 targets — not static endpoints.</p></div>
+      <div class="card"><h3>Runtime guardrails</h3><p>Control batching, concurrency, KV-cache pressure, and decode stalls under policy.</p></div>
+      <div class="card"><h3>Scheduler enforcement</h3><p>GPU-seconds fairness, priority tiers, and noisy-neighbor suppression.</p></div>
+      <div class="card"><h3>Telemetry</h3><p>Signals for leakage, p99 stability, and unit economics per tenant/model/class.</p></div>
+      <div class="card"><h3>Governance</h3><p>Policies are enforced at runtime — drift is prevented automatically.</p></div>
+      <div class="card"><h3>Closed loop</h3><p>model → runtime → scheduler → cost → governance feedback to policy.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Platform adoption path (hybrid, platform-first)</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Phase 1 — Fleet Telemetry Activation</h3>
+        <p>Activate token, GPU-second, and workload telemetry to generate a fleet-wide economic baseline.</p>
+      </div>
+      <div class="card">
+        <h3>Phase 2 — Policy Engine Enablement</h3>
+        <p>Enable fairness, routing, and cost guardrails across controlled production slices.</p>
+      </div>
+      <div class="card">
+        <h3>Phase 3 — Fleet-Wide Enforcement</h3>
+        <p>Expand runtime governance across inference + training surfaces with deterministic p99 controls.</p>
+      </div>
+      <div class="card">
+        <h3>Phase 4 — Autonomous Optimization</h3>
+        <p>Continuously tune runtime + scheduling using live economic + performance signals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="grid grid-2">
+      <div>
+        <div class="brand" style="margin-bottom:10px"><img src="assets/client_logo.svg" alt="GPSUSA.ai" style="width:28px;height:28px" /><span>GPSUSA.ai</span></div>
+        <div class="small">Economic control planes for governed GPU capital — priced, allocated, and enforced by policy.</div>
+      </div>
+      <div class="small">
+        <div><span class="badge">Platform-first optics</span> <span class="badge">Hybrid adoption path</span></div>
+        <div class="hr"></div>
+        <div>© 2026 GPSUSA.ai. All rights reserved.</div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/site_config.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

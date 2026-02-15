@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Activation Configuration — GPSUSA.ai</title>
+  <meta name="description" content="GPSUSA.ai — Economic control planes for governed GPU capital." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html" aria-label="GPSUSA home"><img src="assets/client_logo.svg" alt="GPSUSA.ai" style="width:28px;height:28px" /><span>GPSUSA.ai</span></a>
+        
+        <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="platform.html">Platform</a>
+          <a href="technology.html">Technology</a>
+          <a href="control-plane.html">Economic Control Plane</a>
+          <a href="customers.html">Customers</a>
+          <a href="resources.html">Resources</a>
+          <a href="company.html">Company</a>
+        
+          <a href="contact.html">Contact</a><a class="btn btn-primary mobile-cta" href="activation.html">Access Platform</a>
+        </nav>
+        <a class="btn btn-primary" href="activation.html">Access Platform</a>
+      </div>
+    </header>
+    
+
+<section class="hero">
+  <div class="container">
+    <div class="kicker">Activation — Platform onboarding</div>
+    <h1 class="h1">Activation configuration</h1>
+    <p class="sub">Answer a few platform onboarding questions. This configures telemetry activation and baseline computation.</p>
+
+    <div class="hr"></div>
+
+    <form class="form" id="activationForm" action="https://formsubmit.co/successraja100@gmail.com" method="POST" target="hidden_iframe" onsubmit="return gpsusaSubmitStart();">
+
+  <input type="hidden" name="_subject" value="GPSUSA Activation — Platform Onboarding" />
+  <input type="hidden" name="_captcha" value="false" />
+<label for="surface">Primary deployment surface</label>
+        <div class="select-wrap"><select id="surface" name="deployment_surface" required>
+          <option value="" selected disabled>Select one</option>
+          <option>AWS</option>
+          <option>Azure</option>
+          <option>GCP</option>
+          <option>On‑Prem</option>
+          <option>Hybrid</option>
+        </select></div>
+      </div>
+
+      <div class="field">
+        <label for="fleet">Approximate GPU fleet size</label>
+        <div class="select-wrap"><select id="fleet" name="gpu_fleet_size" required>
+          <option value="" selected disabled>Select one</option>
+          <option>&lt; 32</option>
+          <option>32–128</option>
+          <option>128–512</option>
+          <option>512–2000</option>
+          <option>2000+</option>
+        </select></div>
+      </div>
+
+      <div class="field">
+        <label for="workload">Primary workload type</label>
+        <div class="select-wrap"><select id="workload" name="workload_type" required>
+          <option value="" selected disabled>Select one</option>
+          <option>Production inference</option>
+          <option>Training + fine‑tuning</option>
+          <option>Agentic workloads</option>
+          <option>Batch AI processing</option>
+          <option>Mixed</option>
+        </select></div>
+      </div>
+
+      <div class="field">
+        <label for="goal">Primary optimization goal</label>
+        <div class="select-wrap"><select id="goal" name="primary_goal" required>
+          <option value="" selected disabled>Select one</option>
+          <option>Cost predictability</option>
+          <option>Throughput efficiency</option>
+          <option>Latency SLO stability</option>
+          <option>Multi‑tenant fairness</option>
+          <option>Capacity planning</option>
+        </select></div>
+      </div>
+
+      <div class="field">
+        <label for="email">Work email</label>
+        <input id="email" name="work_email" type="email" placeholder="name@company.com" required />
+      </div>
+
+      <div class="field">
+        <label for="company">Company</label>
+        <input id="company" name="company" type="text" placeholder="Company name" required />
+      </div>
+
+      <div class="field">
+        <label for="role">Role</label>
+        <input id="role" name="role" type="text" placeholder="e.g., Head of Platform, CTO, Director of AI Infra" required />
+      </div>
+
+      <div class="field">
+        <label for="notes">Anything else (optional)</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="e.g., primary models, SLO targets, multi-tenant constraints"></textarea>
+        <div class="note">Tip: Keep this operational. The platform uses telemetry and policy to do the work.</div>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Submit activation request</button>
+      <div class="note"></div>
+    </form>
+<div id="formStatus" class="callout" style="margin-top:14px;display:none"></div>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none"></iframe>
+
+
+    <pre id="formOutput" class="card" style="display:none;white-space:pre-wrap;margin-top:16px"></pre>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="grid grid-2">
+      <div>
+        <div class="brand" style="margin-bottom:10px"><img src="assets/client_logo.svg" alt="GPSUSA.ai" style="width:28px;height:28px" /><span>GPSUSA.ai</span></div>
+        <div class="small">Economic control planes for governed GPU capital — priced, allocated, and enforced by policy.</div>
+      </div>
+      <div class="small">
+        <div><span class="badge">Platform-first optics</span> <span class="badge">Hybrid adoption path</span></div>
+        <div class="hr"></div>
+        <div>© 2026 GPSUSA.ai. All rights reserved.</div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="assets/site_config.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-02-08T00:00:00Z",
+  "fleet": {
+    "tokens_per_sec_per_dollar": {
+      "baseline": 52.4,
+      "governed": 72.1,
+      "unit": "tokens/sec/$"
+    },
+    "cost_per_million_tokens": {
+      "baseline": 2.85,
+      "governed": 1.72,
+      "unit": "$/1M tokens"
+    },
+    "fairness_index": {
+      "baseline": 0.71,
+      "governed": 0.92,
+      "unit": "index"
+    },
+    "p99_latency_ms": {
+      "baseline": 780,
+      "governed": 520,
+      "unit": "ms"
+    },
+    "leakage_percent": {
+      "baseline": 34.0,
+      "governed": 19.5,
+      "unit": "%"
+    }
+  },
+  "series": {
+    "days": [
+      "D-6",
+      "D-5",
+      "D-4",
+      "D-3",
+      "D-2",
+      "D-1",
+      "Today"
+    ],
+    "leakage_percent": [
+      34,
+      33,
+      31,
+      29,
+      25,
+      22,
+      19.5
+    ],
+    "p99_latency_ms": [
+      780,
+      760,
+      735,
+      690,
+      630,
+      575,
+      520
+    ],
+    "tokens_per_sec_per_dollar": [
+      52.4,
+      54.0,
+      56.2,
+      60.0,
+      64.5,
+      68.2,
+      72.1
+    ]
+  }
+}
